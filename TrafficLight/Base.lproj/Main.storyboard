@@ -25,19 +25,20 @@
                                     <constraint firstAttribute="width" constant="120" id="wgm-bx-Wcs"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Osy-AZ-Akv" userLabel="YellowLight">
-                                <rect key="frame" x="136" y="247" width="120" height="120"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Osy-AZ-Akv" userLabel="YellowLight">
+                                <rect key="frame" x="136.66666666666666" y="247" width="119.99999999999997" height="120"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MVC-Zh-XuG" userLabel="RedLight">
-                                <rect key="frame" x="136" y="430" width="120" height="120"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MVC-Zh-XuG" userLabel="RedLight">
+                                <rect key="frame" x="136.66666666666666" y="430" width="119.99999999999997" height="120"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="cDh-bV-39s"/>
+                                    <constraint firstAttribute="width" constant="120" id="d66-ZB-dNc"/>
+                                </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dyY-kl-kE3">
-                                <rect key="frame" x="136" y="725" width="120" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dyY-kl-kE3">
+                                <rect key="frame" x="146.66666666666666" y="728" width="100" height="50"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="NEXT">
@@ -52,8 +53,17 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Osy-AZ-Akv" firstAttribute="centerX" secondItem="2ni-zW-63H" secondAttribute="centerX" id="Gw8-aB-0q8"/>
                             <constraint firstItem="2ni-zW-63H" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="HBF-d6-sHk"/>
+                            <constraint firstItem="MVC-Zh-XuG" firstAttribute="centerX" secondItem="2ni-zW-63H" secondAttribute="centerX" id="NUq-UP-f8t"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dyY-kl-kE3" secondAttribute="bottom" constant="40" id="RdP-tD-F5N"/>
                             <constraint firstItem="2ni-zW-63H" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="T7b-n6-UWi"/>
+                            <constraint firstItem="Osy-AZ-Akv" firstAttribute="height" secondItem="2ni-zW-63H" secondAttribute="height" id="WNm-FA-06P"/>
+                            <constraint firstItem="Osy-AZ-Akv" firstAttribute="width" secondItem="2ni-zW-63H" secondAttribute="width" id="ZsN-eb-L0R"/>
+                            <constraint firstItem="Osy-AZ-Akv" firstAttribute="top" secondItem="2ni-zW-63H" secondAttribute="bottom" constant="48" id="ae3-he-xMg"/>
+                            <constraint firstItem="MVC-Zh-XuG" firstAttribute="top" secondItem="Osy-AZ-Akv" secondAttribute="bottom" constant="63" id="j2J-CA-kkh"/>
+                            <constraint firstItem="dyY-kl-kE3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wcG-m9-nmm"/>
+                            <constraint firstItem="dyY-kl-kE3" firstAttribute="top" secondItem="MVC-Zh-XuG" secondAttribute="bottom" constant="178" id="zvK-uI-AU6"/>
                         </constraints>
                     </view>
                     <connections>
