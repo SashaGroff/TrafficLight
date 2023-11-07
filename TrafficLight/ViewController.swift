@@ -40,6 +40,7 @@ final class ViewController: UIViewController {
 
         if greenView.alpha != 1 && yellowView.alpha != 1 && redView.alpha != 1 {
             greenView.alpha = 1
+            sender.setTitle("NEXT", for: .normal)
         } else if greenView.alpha == 1 {
             greenView.alpha = 0.25
             yellowView.alpha = 1
@@ -48,7 +49,10 @@ final class ViewController: UIViewController {
             redView.alpha = 1
         } else if redView.alpha == 1 {
             redView.alpha = 0.25
+            sender.setTitle("START", for: .normal)
         }
+        
+        
         
     }
 }
