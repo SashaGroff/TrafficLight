@@ -30,7 +30,7 @@ final class ViewController: UIViewController {
             view.layer.cornerRadius = 60
             view.layer.borderWidth = 2
             view.layer.borderColor = UIColor.black.cgColor
-            view.alpha = 0.5
+            view.alpha = 0.25
             
         }
     }
@@ -41,13 +41,13 @@ final class ViewController: UIViewController {
         if greenView.alpha != 1 && yellowView.alpha != 1 && redView.alpha != 1 {
             greenView.alpha = 1
         } else if greenView.alpha == 1 {
-            greenView.alpha = 0.5
+            greenView.alpha = 0.25
             yellowView.alpha = 1
         } else if yellowView.alpha == 1 {
-            yellowView.alpha = 0.5
+            yellowView.alpha = 0.25
             redView.alpha = 1
         } else if redView.alpha == 1 {
-            redView.alpha = 0.5
+            redView.alpha = 0.25
         }
         
     }
