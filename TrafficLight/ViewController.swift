@@ -26,15 +26,13 @@ final class ViewController: UIViewController {
         setting(yellowView)
         setting(redView)
         
-        func setting(_ view: UIView) {
+       func setting(_ view: UIView) {
             view.layer.cornerRadius = 60
             view.layer.borderWidth = 2
             view.layer.borderColor = UIColor.black.cgColor
             view.alpha = 0.25
-            
         }
     }
-
 
     @IBAction func turnButtomAction(_ sender: UIButton) {
 
@@ -51,9 +49,6 @@ final class ViewController: UIViewController {
             redView.alpha = 0.25
             sender.setTitle("START", for: .normal)
         }
-        
-        
-        
     }
 }
 
